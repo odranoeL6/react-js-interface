@@ -1,0 +1,41 @@
+@use "../../global.scss" as *;
+
+.header {
+    background-color: $blue;
+
+    &__itens {
+        background-color: $blue;
+        height: 60px;
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+
+
+
+        li {
+            float: left;
+
+            a {
+                color: $white;
+                display: block;
+                font-weight: 600;
+                margin-top: 10px;
+                margin-left: 15px;
+                padding: 15px;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+
+        &__tasks {
+            a {
+            background-color: $white;
+            border-radius: 10px 10px 0 0;
+            color: $blue !important;
+            padding: 15px 20px 15px 20px !important;
+            text-align: bottom;
+            }
+        }
+    }
+}
