@@ -1,0 +1,63 @@
+@use "../../global.scss" as *;
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+        border-radius: 5px;
+        width: 500px;
+        height: 300px;
+        background-color: $white;
+        color: $dark;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        &__header {
+            padding: 10px;
+            font-family: "Raleway";
+            font-weight: 600;
+        }
+
+        &__body {
+            padding: 10px;
+            text-align: left;
+            line-height: 2;
+            h3,
+            h4 {
+                font-family: "Raleway";
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+        &__buttons {
+            &--yes,
+            &--no {
+                background-color: $white;
+                border-radius: 5px;
+                border: 1px solid black;
+                width: 150px;
+                height: 40px;
+                margin: 10px;
+                font-family: "Raleway";
+                font-weight: 500;
+                font-size: 1.3rem;
+
+                &:hover {
+                    color: $white;
+                    background-color: $blue;
+                    border: none;
+                }
+            }
+        }
+    }
+}
